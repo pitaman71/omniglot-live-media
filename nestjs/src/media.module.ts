@@ -20,6 +20,7 @@ export class MediaModule {
       providers: [
         MediaService
       ],
+      exports: [MediaService]  // Export MediaService so other modules can use it
     };
   }
 }

@@ -1,6 +1,6 @@
 {
     "name": "@pitaman71/omniglot-live-media-nestjs",
-    "version": "0.5.9",
+    "version": "0.5.10",
     "description": "Persistent storage and optimized services for mdia files",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
