@@ -1,0 +1,38 @@
+/* ImageSkeleton.css */
+.image-skeleton-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-skeleton-aspect-ratio-box {
+  position: relative;
+  width: 35%;
+  height: 100%;
+}
+
+.image-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #C3C4C6;
+  animation: pulse 1.5s infinite;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

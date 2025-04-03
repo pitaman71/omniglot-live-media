@@ -1,0 +1,61 @@
+/* Carousel Styles */
+.assets-carousel-container {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.assets-carousel-items {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.assets-carousel-items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.assets-carousel-items::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+.assets-carousel-items::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.assets-carousel-items::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.assets-carousel-item {
+  flex: 0 0 auto;
+  position: relative;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--carousel-item-bg);
+}
+
+.assets-carousel-item > img {
+  max-height: 90%;
+}
+
+.media-asset-image {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.media-asset-video {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
